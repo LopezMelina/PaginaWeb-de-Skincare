@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda SkinCareMe-lina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <script src="https://kit.fontawesome.com/f2c21370e8.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-hand-holding-heart" width="200em"></i>
+        <nav> 
+            <a id="inicio" href="/index.html">Inicio</a>
+            <a id="producto" href="/productos.html">Productos</a>
+            <a id="contacto" href="/contacto.html">Contacto</a>
+            <!-- <ul>
+                <li id="inicio"><a href="/index.html">Inicio</a></li>
+                <li id="producto"><a href="/productos.html">Productos</a></li>
+                <li id="contacto"><a href="/contacto.html">Contacto</a></li>
+            </ul> -->
+        </nav>
+    </header>
+<!-- Titulo -->
+    <div> <h1>Deja aqui tu consulta o compra</h1></div>
+        <section class="formulario">
+   
+    <form action="https://formspree.io/f/xbljdnej" method="post">
+        <div> 
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div>
+            <label for="apellido"> Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+        </div>
+
+        <div>
+            <label for="correo">correo</label>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" required>
+        </div> 
+
+
+        <div>
+            <label for="consulta">Consulta</label>
+            <textarea name="comentario" id="consulta" rows="10" cols="30" placeholder="Escribe tu consulta"></textarea>
+            <button type="submit">Enviar</button>
+            <button type="reset" value="Borrar">Borrar</button> 
+        </div>
+       
+        <div class="condiciones">
+          <!-- Checkin para recibir supuestas nuevas llegadas y/o ofertas de la web -->
+            <input type="checkbox" name="terminos" id="condiciones"> <i>Acepto suscribirme para recibir promociones y nuevos productos en mi correo.</i>
+        </div>
+        
+    </form>
+   </section>
+</body>
+<footer>
+    <div class="Informacion">
+       <h3> Information</h3>
+       <ul>
+        <li id="linkmapa"><i class="fa-solid fa-envelope"> <a href="mailto:lopezmelina.paz@gmail.com">lopezmelina.paz@gmail.com</a></i></li>
+        <li><i class="fa-solid fa-phone-volume"></i> 0800 - 000 - 0080</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> Nuestro local</li>
+        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4755379961307!2d-58.46476848845366!3d-34.566832155438796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb70119ef6779%3A0xcdbcbb011cc3cab3!2sGordo%20Vegano!5e0!3m2!1ses!2sar!4v1730312797854!5m2!1ses!2sar"
+            width="200px" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+       </ul> 
+    </div>
+    <div>
+        <h3> SkinCareMe-lina</h3>
+        <ul>
+            <li><i class="fa-solid fa-store"></i> <a href="/productos.html"> Productos</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/contacto.html"> Contacto</a></li>
+            <li><i class="fa-solid fa-house"></i><a href="/index.html"> Inicio</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4>Medios de Pago</h4>
+        <ul>
+            <li><i class="fa-brands fa-cc-mastercard"></i> Credito Mastercard</li>
+            <li><i class="fa-brands fa-cc-visa"></i> Credito Visa</li>
+            <li><i class="fa-solid fa-credit-card"></i> Debito</li>
+        </ul>
+    </div>
+  </footer>
+</html>

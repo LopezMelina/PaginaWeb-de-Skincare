@@ -1,0 +1,29 @@
+.formulario{
+    /* box-sizing:content-box; */
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+body{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+@media screen and (max-width: 768px){
+    body{ 
+      
+        background-color: darksalmon;
+        color: black;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) */
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer"; 
+    }
+        /* aside{
+            display: block;
+        } */
+    }
+    

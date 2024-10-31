@@ -1,0 +1,81 @@
+main{
+    margin: 2em;
+}
+
+.inicio{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1.2px solid rgb(20, 50, 220);
+    border-radius: 8px;
+    gap: 1em;
+}
+
+.videoplay{
+    margin: 4em;
+}
+
+.parrafo{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* edito los textos */
+h2,h3, .comprar{          
+display: flex;
+justify-content: center;
+}
+/*agrege flex al video para ubicarlo en el centro*/
+.videoplay{
+    display: flex;
+    justify-content: center;
+    margin: 4em;
+}
+
+/*utilize flex para ubicarlos uno al lado del otro*/
+.cards{
+   display: flex;
+   justify-content: space-between;   
+   height:450px;
+   width:400px;
+   gap: 1.5em;
+   
+}
+
+#neutrogena, #acf, #garnier {
+    background-color: rgb(215, 221, 250);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(20, 50, 220);
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 15px;
+}   
+
+@media screen and (max-width: 768px){
+    body{ 
+        background-color: darksalmon;
+        color: black;
+        grid-template-columns: 1fr ;
+        grid-template-areas:
+        "header" 
+        "main" 
+        "footer"
+    }
+    .cards {
+        display: grid;
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+    }
+    /* Comento esto para verificar cual cambio me gusta mas
+        .cards{
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        width: 50px;
+        gap: 0%;
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    }
+    

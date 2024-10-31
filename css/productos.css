@@ -1,0 +1,51 @@
+body{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal; 
+    display: flex;
+    justify-content: center;
+}
+#todoslosproductos{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    justify-content: flex-start;
+}
+
+.product{
+    margin: 0%;
+    grid-column-start: auto;
+    padding: 0.6em;
+    background-color: rgb(100, 149, 237, 0.75);
+    border: 2px solid rgb(20, 48, 102);
+}
+
+/* Aqui uso el media quoere para optimizar la vista en dispositivos moviles */
+@media screen and (max-width: 768px){
+    body{ 
+        background-color: darksalmon;
+        color: black;
+        /* defino que sea una sola columna para evitar que se pongan una al lado de otras */
+        grid-template-columns: 1fr ; 
+        /* dejo marcados los areas para que no se interpongan   */
+        grid-template-areas:
+        "header" 
+        "main" 
+        "footer"
+    }
+    #todoslosproductos, .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCareMe-lina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/f2c21370e8.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header>
+        <!-- Un icono para que sea bonito -->
+        <span class="iconoprinc">
+        <i class="fa-solid fa-hand-holding-heart" width="200em"></i>
+            </span>
+        <nav> 
+            <a id="inicio" href="/index.html">Inicio</a>
+            <a id="producto" href="/productos.html">Productos</a>
+            <a id="contacto" href="/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+  <main>
+    <section class="inicio">
+        <!-- informacion breve de la tienda -->
+        <h2>Bienvenidos a la tienda comercializadora Oficial de productos Skincare</h2>
+        <p class="parrafo"> Trabajamos con las mejores marcas LowCost del mercado, para ofrecerles los mejores productos al mejor precio</p>
+        <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, laudantium?</p>
+    </section>
+    <!-- implementacion de una playlist (creada por mi) sobre las marcas que manejan -->
+    <span class="videoplay">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=zdzumCxcSHso8xYU&amp;list=PLpQ-tKPHCZ1puY-6FTQQPMgR3568u1sck" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </span>
+
+    <h2>Nuestros productos</h2>
+    <!-- Division para hacer el borde formato carta -->
+    <section class="cards">
+        <!-- Aqui se muestran las 3 marcas que maneja la pagina web -->
+        <div id="neutrogena">
+            <h3> Neutrogena Family</h3>
+            <img src="/img/cremafacial hydroboost.jpeg" width="300em" height="300em" alt="Crema Facial HydroBoost">
+            <!-- Boton que te redirecciona a los productos -->
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+        <div id="acf">
+            <h3>ACF Family</h3>
+            <img src="/img/cremaACF.jpg" width="300em" height="300em" alt="Crema Facial ACF">
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+        <div id="garnier">
+            <h3>Garnier Family</h3>
+            <img src="/img/garniesfacialVitaminaC.jpg" width="300em" height="300em" alt="Crema Facial Garnier Vitamina C">
+            <label for="comprar3"> </label>
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <!-- division de informacion para una mejor manipulacion de las columnas en el footer -->
+    <div class="informacion">
+       <h3> Information</h3>
+       <ul>
+        <li><i class="fa-solid fa-envelope"> <a href="mailto:lopezmelina.paz@gmail.com">lopezmelina.paz@gmail.com</a></i></li>
+        <li><i class="fa-solid fa-phone-volume"></i> 0800 - 000 - 0080</li>
+        <li><a href="https://maps.app.goo.gl/iiQCUEFJSBExvZCk8" target="_blank"> <i class="fa-solid fa-map-location-dot"></i> Nuestro local</a></li>
+       <!-- Link que te redirecciona al supuesto local de ventas, es mi local favorito de comida, no tiene que ver pero me parecio gracioso ponerlo -->
+    </ul> 
+    </div>
+    <div class="principal">
+        <!-- Nombre de la pagina, no soy buena con los nombres -->
+        <h3> SkinCareMe-lina</h3>
+        <ul>
+            <li><i class="fa-solid fa-store"></i> <a href="/productos.html"> Productos</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/contacto.html"> Contacto</a></li>
+            <li><i class="fa-solid fa-house"></i><a href="/index.html"> Inicio</a></li>
+            <!-- Links para redireccionar dentro de la pagina -->
+        </ul>
+    </div>
+    <div class="mediospagos">
+        <!-- informacion con los metodos de pagos aptos para comprar -->
+        <h4>Medios de Pago</h4>
+        <ul>
+            <li><i class="fa-brands fa-cc-mastercard"></i> Credito Mastercard</li>
+            <li><i class="fa-brands fa-cc-visa"></i> Credito Visa</li>
+            <li><i class="fa-solid fa-credit-card"></i> Debito</li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>

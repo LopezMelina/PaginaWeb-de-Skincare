@@ -1,0 +1,528 @@
+CSS GLOBAL---->
+header{
+    margin: 0px;
+    background-color: rgb(100, 149, 237, 0.75);
+    border: 2px solid rgb(20, 48, 102);
+    display:flex;
+    justify-content: flex-start;
+    gap: 4em;
+    padding: 1.5em 1em;
+    font-family: "lato", serif;
+    font-weight: 400;
+
+}
+nav{
+    gap: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+body{
+    margin: 0;
+    background-color: rgba(139, 196, 235, 0.973);
+    background-size: cover;
+}
+
+h2{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+footer{
+    margin: 0;
+    background-color: rgb(100, 149, 237, 0.75);
+    border: 2px solid rgb(20, 48, 102);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#linkmapa{
+color: black;
+}
+
+/* .informacion{
+    grid-column-start: 1fr;
+    grid-column-end: 1fr;
+} */
+.principal{
+grid-column-start: 3fr / 4fr
+}
+.mediospagos{
+grid-column-start: 4fr / 5fr;
+}
+
+SECCION DEL INDEX ---->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCareMe-lina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/f2c21370e8.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-hand-holding-heart" width="200em"></i>
+        <nav> 
+            <a id="inicio" href="/index.html">Inicio</a>
+            <a id="producto" href="/productos.html">Productos</a>
+            <a id="contacto" href="/contacto.html">Contacto</a>
+            <!-- <ul>
+                <li id="inicio"><a href="/index.html">Inicio</a></li>
+                <li id="producto"><a href="/productos.html">Productos</a></li>
+                <li id="contacto"><a href="/contacto.html">Contacto</a></li>
+            </ul> -->
+        </nav>
+    </header>
+  <main>
+    <section class="inicio">
+        <h2>Bienvenidos a la tienda comercializadora Oficial de productos Skincare</h2>
+        <p class="parrafo"> Trabajamos con las mejores marcas LowCost del mercado, para ofrecerles los mejores productos al mejor precio</p>
+        <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, laudantium?</p>
+    </section>
+    <span class="videoplay">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=zdzumCxcSHso8xYU&amp;list=PLpQ-tKPHCZ1puY-6FTQQPMgR3568u1sck" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </span>
+
+    <h2>Nuestros productos</h2>
+    <section class="cards">
+        
+        <div id="neutrogena">
+            <h3> Neutrogena Family</h3>
+            <img src="/img/cremafacial hydroboost.jpeg" width="300em" height="300em" alt="Crema Facial HydroBoost">
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+        <div id="acf">
+            <h3>ACF Family</h3>
+            <img src="/img/cremaACF.jpg" width="300em" height="300em" alt="Crema Facial ACF">
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+        <div id="garnier">
+            <h3>Garnier Family</h3>
+            <img src="/img/garniesfacialVitaminaC.jpg" width="300em" height="300em" alt="Crema Facial Garnier Vitamina C">
+            <label for="comprar3"> </label>
+            <a class="comprar" href="/productos.html"> Ver todos los Productos</a>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="informacion">
+       <h3> Information</h3>
+       <ul>
+        <li><i class="fa-solid fa-envelope"> <a href="mailto:lopezmelina.paz@gmail.com">lopezmelina.paz@gmail.com</a></i></li>
+        <li><i class="fa-solid fa-phone-volume"></i> 0800 - 000 - 0080</li>
+        <li><a href="https://maps.app.goo.gl/iiQCUEFJSBExvZCk8" target="_blank"> <i class="fa-solid fa-map-location-dot"></i> Nuestro local</a></li>
+       </ul> 
+    </div>
+    <div class="principal">
+        <h3> SkinCareMe-lina</h3>
+        <ul>
+            <li><i class="fa-solid fa-store"></i> <a href="/productos.html"> Productos</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/contacto.html"> Contacto</a></li>
+            <li><i class="fa-solid fa-house"></i><a href="/index.html"> Inicio</a></li>
+        </ul>
+    </div>
+    <div class="mediospagos">
+        <h4>Medios de Pago</h4>
+        <ul>
+            <li><i class="fa-brands fa-cc-mastercard"></i> Credito Mastercard</li>
+            <li><i class="fa-brands fa-cc-visa"></i> Credito Visa</li>
+            <li><i class="fa-solid fa-credit-card"></i> Debito</li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>
+
+STYLE.CSS DEL INDEX---->
+main{
+    margin: 2em;
+}
+
+.inicio{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1.2px solid rgb(20, 50, 220);
+    border-radius: 8px;
+    gap: 1em;
+}
+
+.videoplay{
+    margin: 4em;
+}
+
+.parrafo{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* edito los textos */
+h2,h3, .comprar{          
+display: flex;
+justify-content: center;
+}
+/*agrege flex al video para ubicarlo en el centro*/
+.videoplay{
+    display: flex;
+    justify-content: center;
+    margin: 4em;
+}
+
+/*utilize flex para ubicarlos uno al lado del otro*/
+.cards{
+   display: flex;
+   justify-content: space-between;   
+   height:450px;
+   width:400px;
+   gap: 1.5em;
+   
+}
+
+#neutrogena, #acf, #garnier {
+    background-color: rgb(215, 221, 250);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(20, 50, 220);
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 15px;
+}   
+
+PAGINA DE PRODUCTOS---->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCareMe-lina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <script src="https://kit.fontawesome.com/f2c21370e8.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-hand-holding-heart" width="200em"></i>
+        <nav> 
+            <a id="inicio" href="/index.html">Inicio</a>
+            <a id="producto" href="/productos.html">Productos</a>
+            <a id="contacto" href="/contacto.html">Contacto</a>
+            <!-- <ul>
+                <li id="inicio"><a href="/index.html">Inicio</a></li>
+                <li id="producto"><a href="/productos.html">Productos</a></li>
+                <li id="contacto"><a href="/contacto.html">Contacto</a></li>
+            </ul> -->
+        </nav>
+    </header>
+    <main>
+        <p>Todos los productos, maximo de compra 10 unidades</p>
+        <section id="todoslosproductos">
+            
+            <span id="product">
+                <h3>
+                    <strong>Neutrogena </strong>
+                </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+               <div class="product">Crema Anti-Edad 
+                        <img src="/img/cremaAntiEdad_brigthBoost.jpg" alt="Crema Anti-Edad" width="400em" height="300em">
+                        <label for="Precio"> Precio: $10,000</label>
+                        <label for="cantidad1"> <b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Crema Corporal HydroBoost 
+                        <img src="/img/cremaengelcorporalNeutrogena.png" alt="Crema Corporal HydroBoost" width="400em" height="300em">
+                        <label for="Precio"> Precio: $5,000</label>
+                        <label for="cantidad2"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad2" min="0" max="10">
+                    </div>
+                <div class="product">Gel Limpiador HidroBoost 
+                        <img src="/img/limpiadorgel_sp-min-es-es.png" alt="Gel Limpiador HidroBoost" width="400em" height="300em">
+                        <label for="Precio"> Precio: $10,000</label>
+                        <label for="cantidad3"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad3" min="0" max="10">
+                    </div>
+                <div class="product">Serum Hidratante Concentrado 
+                        <img src="/img/serum_facial_hb_01_v2-es-pe.png" alt="Serum Hidratante Concentrado" width="400em" height="300em">
+                        <label for="Precio"> Precio: $12,000</label>
+                        <label for="cantidad4"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad4" min="0" max="10">
+                    </div>
+                <div class="product">Gel hidratante piel grasa
+                         <img src="/img/cremafacial hydroboost.jpeg" alt="Gel hidratante piel grasa" width="400em" height="300em">
+                         <label for="Precio"> Precio: $9,000</label>
+                         <label for="cantidad5"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad5" min="0" max="10">
+                    </div>
+                <div class="product">Exfoliante Anti Acne 
+                        <img src="/img/jabon_exfoliante_anti_acne-removebg-preview.png" alt="Exfoliante Anti Acne" width="400em" height="300em">
+                        <label for="Precio"> Precio: $7,000</label>
+                        <label for="cantidad6"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad6" min="0" max="10">
+                    </div>
+            </span>
+            <span>
+                <h3> <strong>ACF 
+                    <small> By DADATINA</small>
+                </strong> </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                <div class="product">Contorno de Ojos 
+                        <img src="/img/ContornoDeOjosACF.jpg" alt="Contorno de Ojos" width="400em" height="300em">
+                        <label for="Precio"> Precio: $9,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Stick Anti Roce (muslos) 
+                        <img src="/img/AntiRoceStickACF.jpg" alt="Stick Anti Roce (muslos)" width="400em" height="300em">
+                        <label for="Precio"> Precio: $6,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Crema Facial para todo tipo de piel 
+                        <img src="/img/cremaACF.jpg" alt="Crema Facial para todo tipo de piel" width="400em" height="300em">
+                        <label for="Precio"> Precio: $9,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Gel Post Solar
+                         <img src="/img/cremaPostSolarACF.jpg" alt="Gel Post Solar" width="400em" height="300em">
+                         <label for="Precio"> Precio: $7,000</label>
+                         <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Exfoliante Corporal
+                         <img src="/img/ExfolianteCorporalACF.jpg" alt="Exfoliante Corporal" width="400em" height="300em">
+                         <label for="Precio"> Precio: $9,000</label>
+                         <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Serum Reparador con Acido Hialuronico 
+                        <img src="/img/serum_ACF-ReparadorVOL2.webp" alt="Serum Reparador con Acido Hialuronico" width="400em" height="300em">
+                        <label for="Precio"> Precio: $15,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                </div>
+            </span>
+            <span>
+                <h3> 
+                    <strong>Garnier</strong> 
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                <div class="product">Agua Micelar con Oleo 
+                        <img src="/img/AguamicelarGarnier.jpg" alt="Agua Micelar con Oleo" width="400em" height="300em">
+                        <label for="Precio"> Precio: $10,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Gel hidratante con Vitamina C 
+                        <img src="/img/garniesfacialVitaminaC.jpg" alt="Gel hidratante con Vitamina C" width="400em" height="300em">
+                        <label for="Precio"> Precio: $8,000 </label>                        
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product"> Gel de limpieza con Vitamina C 
+                        <img src="/img/GeldeLimpiezaGarnier.jpg" alt="Gel de limpieza" width="400em" height="300em">
+                        <label for="Precio"> Precio: $12,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Mascarilla Facial Reafirmante 
+                        <img src="/img/MascarillaFacialGarnier.jpg" alt="Mascarilla Facial Reafirmante" width="400em" height="300em">
+                        <label for="Precio"> Precio: $2,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Mascatilla de Ojos hidratante 
+                        <img src="/img/mascarillaparaojosgarnier-removebg-preview.png" alt="Mascatilla de Ojos hidratante" width="400em" height="300em">
+                        <label for="Precio"> Precio: $3,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+                <div class="product">Serum Aclarante AntiManchas 
+                        <img src="/img/srum_aclarante-removebg-preview.png" alt="Serum Aclaramte" width="400em" height="300em">
+                        <label for="Precio"> Precio: $15,000</label>
+                        <label for="cantidad1"><b>Cantidad</b></label>
+                        <input type="number" name="Cantidad" id="cantidad1" min="0" max="10">
+                    </div>
+            </span>
+        </section>
+    </main>
+    <footer>
+        <div class="Informacion">
+           <h3> Information</h3>
+           <ul>
+            <li><i class="fa-solid fa-envelope"> <a href="mailto:lopezmelina.paz@gmail.com">lopezmelina.paz@gmail.com</a></i></li>
+            <li><i class="fa-solid fa-phone-volume"></i> 0800 - 000 - 0080</li>
+            <li><a href="https://maps.app.goo.gl/iiQCUEFJSBExvZCk8" target="_blank"> <i class="fa-solid fa-map-location-dot"></i> Nuestro local</a></li>
+           </ul> 
+        </div>
+        <div>
+            <h3> SkinCareMe-lina</h3>
+            <ul>
+                <li><i class="fa-solid fa-store"></i> <a href="/productos.html"> Productos</a></li>
+                <li><i class="fa-solid fa-id-card"></i><a href="/contacto.html"> Contacto</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/index.html"> Inicio</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Medios de Pago</h4>
+            <ul>
+                <li><i class="fa-brands fa-cc-mastercard"></i> Credito Mastercard</li>
+                <li><i class="fa-brands fa-cc-visa"></i> Credito Visa</li>
+                <li><i class="fa-solid fa-credit-card"></i> Debito</li>
+            </ul>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+STYLE.CSS DE LOS RODUCTOS---->
+
+body{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#todoslosproductos{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    justify-content: flex-start;
+}
+
+.product{
+    margin: 0%;
+    grid-column-start: auto;
+    padding: 0.6em;
+    background-color: rgb(100, 149, 237, 0.75);
+    border: 2px solid rgb(20, 48, 102);
+}
+
+
+PAGINA DE CONTACTO--->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda SkinCareMe-lina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <script src="https://kit.fontawesome.com/f2c21370e8.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-hand-holding-heart" width="200em"></i>
+        <nav> 
+            <a id="inicio" href="/index.html">Inicio</a>
+            <a id="producto" href="/productos.html">Productos</a>
+            <a id="contacto" href="/contacto.html">Contacto</a>
+            <!-- <ul>
+                <li id="inicio"><a href="/index.html">Inicio</a></li>
+                <li id="producto"><a href="/productos.html">Productos</a></li>
+                <li id="contacto"><a href="/contacto.html">Contacto</a></li>
+            </ul> -->
+        </nav>
+    </header>
+
+   <section class="formulario">
+    <h1>Deja aqui tu consulta</h1>
+    <form action="https://formspree.io/f/xbljdnej" method="post">
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+            <p></p>
+            <label for="apellido"> Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+            <p></p>
+            <label for="correo">correo</label>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" required>
+            <p></p>
+        <div>
+            <label for="consulta">Consulta</label>
+            <textarea name="comentario" id="consulta" rows="10" cols="30" placeholder="Escribe tu consulta"></textarea>
+        </div>
+        <p>   </p>
+        <input type="checkbox" name="terminos" id="condiciones"> <i>Acepto suscribirme para recibir promociones y nuevos productos en mi correo.</i>
+        <p></p>
+        <button type="submit">Enviar</button>
+        <button type="reset" value="Borrar">Borrar</button> 
+    </form>
+   </section>
+</body>
+<footer>
+    <div class="Informacion">
+       <h3> Information</h3>
+       <ul>
+        <li id="linkmapa"><i class="fa-solid fa-envelope"> <a href="mailto:lopezmelina.paz@gmail.com">lopezmelina.paz@gmail.com</a></i></li>
+        <li><i class="fa-solid fa-phone-volume"></i> 0800 - 000 - 0080</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> Nuestro local</li>
+        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4755379961307!2d-58.46476848845366!3d-34.566832155438796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb70119ef6779%3A0xcdbcbb011cc3cab3!2sGordo%20Vegano!5e0!3m2!1ses!2sar!4v1730312797854!5m2!1ses!2sar"
+            width="200px" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+       </ul> 
+    </div>
+    <div>
+        <h3> SkinCareMe-lina</h3>
+        <ul>
+            <li><i class="fa-solid fa-store"></i> <a href="/productos.html"> Productos</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/contacto.html"> Contacto</a></li>
+            <li><i class="fa-solid fa-house"></i><a href="/index.html"> Inicio</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4>Medios de Pago</h4>
+        <ul>
+            <li><i class="fa-brands fa-cc-mastercard"></i> Credito Mastercard</li>
+            <li><i class="fa-brands fa-cc-visa"></i> Credito Visa</li>
+            <li><i class="fa-solid fa-credit-card"></i> Debito</li>
+            <li><i class="fa-solid fa-landmark"></i> Transferencia Bancaria</li>
+            <li><i class="fa-solid fa-shop"></i> RapiPago - PagoFacil</li>
+        </ul>
+    </div>
+  </footer>
+</html>
+
+
+INDEX DEL CONTACTO--->
+
+.formulario{
+    border: 1px solid rgb(20, 48, 102);
+    box-sizing:content-box;
+
+}
